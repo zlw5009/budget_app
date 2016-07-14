@@ -1,0 +1,45 @@
+<form action="/expendable" method="post">
+  <div>
+    <h3><u><a href="#Income">Income</a></u></h3>
+      <ul class="income" id="Income">
+        Net Income:<br>
+        <input type="number" name="income[net]"><br>
+        Other Income:<br>
+        <input type="number" name="income[other]"><br>
+      </ul>
+  </div>
+  <div class="expenses">
+    <h3><u><a href="#Expenses">Expenses</a></u></h3>
+      <ul class="bills" id="Expenses">
+        Housing:<br>
+        <input type="number" name="bills[housing]"><br>
+        Utilities:<br>
+        <input type="number" name="bills[utilities]"><br>
+        Vehicle:<br>
+        <input type="number" name="bills[vehicle]"><br>
+        Vehicle Insurance:<br>
+        <input type="number" name="bills[vehicle_insurance]"><br>
+        Cell Phone:<br>
+        <input type="number" name="bills[cell_phone]"><br>
+        Internet:<br>
+        <input type="number" name="bills[internet]"><br>
+        Cable:<br>
+        <input type="number" name="bills[cable]"><br>
+        Credit Cards:<br>
+        <input type="number" name="bills[credit_cards]"><br>
+        Health Insurance:<br>
+        <input type="number" name="bills[health_insurance]"><br>
+        Other Insurance(s):<br>
+        <input type="number" name="bills[other_insurance]"><br>
+        All Other Bills:<br>
+        <input type="number" name="bills[other]"><br>
+      </ul>
+    <button type="submit">Calculate</button>
+  </div>
+</form>
+
+<div class="total">
+  <b>Total Monthly Income:</b> $<%= @income %><br>
+  <b><u>Total Monthly Expenses:</b> $<%= @expenses %></u><br>
+  <b>Expendable Income:</b> $<%= @expendable_income %>
+</div>

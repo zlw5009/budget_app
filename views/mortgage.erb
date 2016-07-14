@@ -1,0 +1,34 @@
+<form action="/mortgage" method="post">
+  <div>
+    <h3><u><a href="#Income">Income</a></u></h3>
+      <ul class="income" id="Income">
+        Gross Monthly income:<br>
+        <input type="number" name="income[gross]"><br>
+      </ul>
+  </div>
+  <div >
+    <h3><u><a href="#Expenses">Expenses</a></u></h3>
+      <ul class="bills" id="Expenses">
+      <p>Only add the expense if the monthly payments will extend past 11 months</p>
+        Mortgage:<br>
+        <input type="number" name="bills[mortgage]"><br>
+        Vehicle:<br>
+        <input type="number" name="bills[vehicle]"><br>
+        Credit Cards:<br>
+        <input type="number" name="bills[credit_cards]"><br>
+        Student Loans:<br>
+        <input type="number" name="bills[student_loans]"><br>
+        Personal Loans:<br>
+        <input type="number" name="bills[personal_loans]"><br>
+        Other:<br>
+        <input type="number" name="bills[other]"><br>
+      </ul>
+    <button type="submit">Calculate</button>
+  </div>
+</form>
+
+<div class="total">
+  <b>Total Monthly Income:</b> $<%= @income %><br>
+  <b><u>Total Monthly Expenses:</b> $<%= @expenses %></u><br>
+  <b>Estimated Maximum Mortgage:</b> $<%= @mortgage %>
+</div>
