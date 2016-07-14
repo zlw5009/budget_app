@@ -1,0 +1,23 @@
+---
+zach: $2a$10$xCGWbbYhUCSr0qYAAKl/Y.50lZ7cWXoGWIzCVzMvMwM5wtWQUh2zC---
+zach: "$2a$10$xCGWbbYhUCSr0qYAAKl/Y.50lZ7cWXoGWIzCVzMvMwM5wtWQUh2zC"
+steve: !ruby/string:BCrypt::Password
+  str: "$2a$10$N30z0uqD6v7.k/h1Vf7G.uVmwzcevul4gE/A7bwJFvssSXRSvLia6"
+  version: 2a
+  cost: 10
+  salt: "$2a$10$N30z0uqD6v7.k/h1Vf7G.u"
+  checksum: Vmwzcevul4gE/A7bwJFvssSXRSvLia6
+---
+zach: "$2a$10$xCGWbbYhUCSr0qYAAKl/Y.50lZ7cWXoGWIzCVzMvMwM5wtWQUh2zC"
+steve: !ruby/string:BCrypt::Password
+  str: "$2a$10$N30z0uqD6v7.k/h1Vf7G.uVmwzcevul4gE/A7bwJFvssSXRSvLia6"
+  version: 2a
+  cost: 10
+  salt: "$2a$10$N30z0uqD6v7.k/h1Vf7G.u"
+  checksum: Vmwzcevul4gE/A7bwJFvssSXRSvLia6
+john: !ruby/string:BCrypt::Password
+  str: "$2a$10$1rgPXNFf3/5fwRTojQJyzudDsKb0fh/J.Nve8qmKd76F4PBUaNeb."
+  version: 2a
+  cost: 10
+  salt: "$2a$10$1rgPXNFf3/5fwRTojQJyzu"
+  checksum: dDsKb0fh/J.Nve8qmKd76F4PBUaNeb.

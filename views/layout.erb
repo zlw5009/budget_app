@@ -3,12 +3,18 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/stylesheets/budget_app.css">
   </head>
-  
+
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/expendable">Expendable Income</a></li>
-    <li><a href="/mortgage">Maximum Mortgage</a></li>
+    <li class="nav"><a href="/">Home</a></li>
+    <li class="nav"><a href="/expendable">Expendable Income</a></li>
+    <li class="nav"><a href="/mortgage">Maximum Mortgage</a></li>
+    <li class="nav" style="float:right"><a href="/users/login">Login</a></li>
+    <li class="nav" style="float:right"><a href="/users/signup">Sign Up</a></li>
   </ul>
+
+  <% if session[:message] %>
+    <p class="message"><%= session.delete(:message) %></p>
+  <% end %>
 
   <body> 
 
